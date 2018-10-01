@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View, StatusBar } from "react-native";
 import Weather from "./Weather";
 
-const API_KEY="e2ba3d8c096a5769bcaf8f19a872a48f";
+const API_KEY = "e2ba3d8c096a5769bcaf8f19a872a48f";
 
 export default class App extends Component {
   state = {
@@ -15,6 +15,7 @@ export default class App extends Component {
     navigator.geolocation.getCurrentPosition(
       position => {
         this._getWeather(position.coords.latitude, position.coords.longitude);
+        console.log(position)
       },
       error => {
         this.setState({

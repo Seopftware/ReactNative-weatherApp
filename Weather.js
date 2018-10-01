@@ -92,12 +92,14 @@ const styles = StyleSheet.create({
   },
   upper: {
     flex: 1,
+    justifyContent: "center",
     alignItems: "center",
     backgroundColor: "transparent"
   },
   temperature: {
     fontSize: 48,
     color: "white",
+    alignItems: "center",
     justifyContent: "center",
     backgroundColor: "transparent"
   },
@@ -126,6 +128,7 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     color: "white",
     fontSize: 24,
+    backgroundColor: "transparent",
     color: "white",
     marginBottom: 24
   }
